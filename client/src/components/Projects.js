@@ -61,7 +61,7 @@ const Projects = () => {
 
             <div className="more-projects-container">
               <a 
-                href="https://github.com/your-username" 
+                href="https://github.com/Shiv-Patel-24" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="more-projects-button"

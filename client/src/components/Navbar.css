@@ -1,7 +1,7 @@
 .navbar {
-  background: rgba(28, 29, 37, 0.8); 
+  background: rgba(28, 29, 37, 0.8);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -97,9 +97,8 @@
   .menu-icon {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
+    top: 22px;
+    right: 24px;
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
