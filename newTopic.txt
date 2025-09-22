@@ -1,0 +1,5 @@
+Skill add  : Frontend, Backend, Cloud, Database. 
+
+Overview : Web Developer, React Developer,  Backend Developer, Full STack Developer 
+
+Technologies : add MySql Next.js

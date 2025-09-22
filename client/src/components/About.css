@@ -1,0 +1,22 @@
+.about-section {
+  background-color: #1c1d25;
+}
+
+.about-text-container {
+  max-width: 800px;
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+.about-text-container h3 {
+  font-size: 1.8rem;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+.about-text-container p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #b0b0b0;
+  margin-bottom: 15px;
+}
