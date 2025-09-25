@@ -1,24 +1,32 @@
+// client/src/components/Skills.js
 import React from 'react';
 import './Skills.css';
 import { Fade } from "react-awesome-reveal";
-import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGitAlt, FaBootstrap, FaNpm, FaLaptopCode, FaCloud } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGitAlt, FaBootstrap, FaNpm, FaLaptopCode, FaCloud, FaPython, FaJava } from 'react-icons/fa';
 import { TbHexagonLetterC } from "react-icons/tb";
-import { SiJavascript, SiExpress, SiMongodb, SiGithub, SiRedux, SiTailwindcss, SiPostman, SiRender, SiNextdotjs, SiMysql } from 'react-icons/si';
+import { SiJavascript, SiExpress, SiMongodb, SiGithub, SiRedux, SiTailwindcss, SiPostman, SiRender, SiNextdotjs, SiMysql, SiGreensock } from 'react-icons/si'; 
 import { VscCode } from "react-icons/vsc";
 import { AiOutlineCode } from "react-icons/ai";
-import { CgWebsite } from "react-icons/cg"; 
+import { CgWebsite } from "react-icons/cg";
+import { IoLogoVercel } from "react-icons/io5";
 
 const Skills = () => {
+  const programmingLanguages = [
+    { name: 'JavaScript', icon: <SiJavascript size={50} color="#F7DF1E" /> },
+    { name: 'Python', icon: <FaPython size={50} color="#3776AB" /> },
+    { name: 'Java', icon: <FaJava size={50} color="#007396" /> },
+  ];
+
   const technologies = [
     { name: 'HTML5', icon: <FaHtml5 size={50} color="#E34F26" /> },
     { name: 'CSS3', icon: <FaCss3Alt size={50} color="#1572B6" /> },
-    { name: 'JavaScript', icon: <SiJavascript size={50} color="#F7DF1E" /> },
     { name: 'React', icon: <FaReact size={50} color="#61DAFB" /> },
     { name: 'Redux', icon: <SiRedux size={50} color="#764ABC" /> },
     { name: 'Next.js', icon: <SiNextdotjs size={50} color="#000000" /> },
+    { name: 'GSAP', icon: <SiGreensock size={50} color="#88CE02" /> }, // Corrected icon name
     { name: 'Node.js', icon: <FaNodeJs size={50} color="#339933" /> },
     { name: 'Express.js', icon: <SiExpress size={50} color="#000000" /> },
-    { name: 'RESTful API', icon: <CgWebsite size={50} color="#007ACC" /> }, // New
+    { name: 'RESTful API', icon: <CgWebsite size={50} color="#007ACC" /> },
     { name: 'MongoDB', icon: <SiMongodb size={50} color="#47A248" /> },
     { name: 'MySQL', icon: <SiMysql size={50} color="#4479A1" /> },
     { name: 'Bootstrap', icon: <FaBootstrap size={50} color="#7952B3" /> },
@@ -34,7 +42,8 @@ const Skills = () => {
     { name: 'Cursor', icon: <TbHexagonLetterC size={50} color="#2F3A4B" /> },
     { name: 'Postman', icon: <SiPostman size={50} color="#FF6C37" /> },
     { name: 'npm', icon: <FaNpm size={50} color="#CB3837" /> },
-    { name: 'Vercel', icon: <SiRender size={50} color="#000000" /> },
+    { name: 'Vercel', icon: <IoLogoVercel size={50} color="#005080" /> },
+    { name: 'Render', icon: <SiRender size={50} color="#000000" /> },
     { name: 'Cloud Hosting', icon: <FaCloud size={50} color="#0084C6" /> },
   ];
 
@@ -43,6 +52,17 @@ const Skills = () => {
       <div className="section-content">
         <Fade direction="up" triggerOnce>
           <h2 className="section-title">My Tech Stack & Tools</h2>
+
+          <h3 className="subsection-title">Programming Languages</h3>
+          <div className="skills-grid">
+            {programmingLanguages.map((skill, index) => (
+              <div key={index} className="skill-item">
+                {skill.icon}
+                <p>{skill.name}</p>
+              </div>
+            ))}
+          </div>
+
           <h3 className="subsection-title">Technologies</h3>
           <div className="skills-grid">
             {technologies.map((skill, index) => (
@@ -52,6 +72,7 @@ const Skills = () => {
               </div>
             ))}
           </div>
+          
           <h3 className="subsection-title">Developer Tools</h3>
           <div className="skills-grid">
             {tools.map((tool, index) => (

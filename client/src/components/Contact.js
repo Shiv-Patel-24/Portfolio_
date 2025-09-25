@@ -4,7 +4,7 @@ import './Contact.css';
 import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("https://formspree.io/f/xnnbepod"); 
+  const [state, handleSubmit] = useForm("xnnbepod"); 
 
   if (state.succeeded) {
     return (
