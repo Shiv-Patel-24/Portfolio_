@@ -28,7 +28,7 @@ const Projects = () => {
       image: project1Image,
       description: "Wanderlust is a travel platform that allows users to explore and share their favourite destinations. The project is built using MongoDB, Express.js, EJS, Node.js and incorporates various technologies for features like image upload, user authentication, and interactive maps.",
       techStack: ["Node.js", "REST API",  "Express", "EJS", "JavaScript", "HTML", "CSS", "Bootstrap", "MongoDB", "JWT authentication"],
-      liveLink: "#",
+      liveLink: "https://wanderlust-project-34wc.onrender.com/listings",
       repoLink: "https://github.com/Shiv-Patel-24/wanderlustProject",
     },
   ];
