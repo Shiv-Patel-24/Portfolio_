@@ -45,6 +45,7 @@ const Experience = () => {
                   <h4 className="exp-company">{exp.company}</h4>
                   <p className="exp-duration">{exp.duration}</p>
                   <p className="exp-desc">{exp.description}</p>
+                  
                 </div>
                 <br />
               </Tilt>
