@@ -2,19 +2,21 @@
 import React from 'react';
 import './Skills.css';
 import { Fade } from "react-awesome-reveal";
-import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGitAlt, FaBootstrap, FaNpm, FaLaptopCode, FaCloud, FaPython, FaJava } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGitAlt, FaBootstrap, FaNpm, FaLaptopCode, FaCloud, FaPython, FaJava, FaLaravel, FaPhp } from 'react-icons/fa';
 import { TbHexagonLetterC } from "react-icons/tb";
 import { SiJavascript, SiExpress, SiMongodb, SiGithub, SiRedux, SiTailwindcss, SiPostman, SiRender, SiNextdotjs, SiMysql, SiGreensock } from 'react-icons/si'; 
 import { VscCode } from "react-icons/vsc";
 import { AiOutlineCode } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
 import { IoLogoVercel } from "react-icons/io5";
+import { SiOpenai } from 'react-icons/si'
 
 const Skills = () => {
   const programmingLanguages = [
     { name: 'JavaScript', icon: <SiJavascript size={50} color="#F7DF1E" /> },
     { name: 'Python', icon: <FaPython size={50} color="#3776AB" /> },
     { name: 'Java', icon: <FaJava size={50} color="#007396" /> },
+    { name: 'PHP', icon: <FaPhp size={50} color="#777BB4" /> },
   ];
 
   const technologies = [
@@ -23,8 +25,10 @@ const Skills = () => {
     { name: 'React', icon: <FaReact size={50} color="#61DAFB" /> },
     { name: 'Redux', icon: <SiRedux size={50} color="#764ABC" /> },
     { name: 'Next.js', icon: <SiNextdotjs size={50} color="#000000" /> },
-    { name: 'GSAP', icon: <SiGreensock size={50} color="#88CE02" /> }, // Corrected icon name
+    { name: 'GSAP', icon: <SiGreensock size={50} color="#88CE02" /> }, 
     { name: 'Node.js', icon: <FaNodeJs size={50} color="#339933" /> },
+    { name: 'Laravel', icon: <FaLaravel size={50} color="#FF2D20" /> },
+    { name: 'AI Integration', icon: <SiOpenai size={50} color="#412991" /> },
     { name: 'Express.js', icon: <SiExpress size={50} color="#000000" /> },
     { name: 'RESTful API', icon: <CgWebsite size={50} color="#007ACC" /> },
     { name: 'MongoDB', icon: <SiMongodb size={50} color="#47A248" /> },

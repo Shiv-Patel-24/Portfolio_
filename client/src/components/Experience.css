@@ -1,0 +1,62 @@
+.experience-section {
+  background-color: #121212;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.tilt-card {
+  transform-style: preserve-3d;
+  width: 100%;
+  max-width: 450px;
+}
+
+.exp-card {
+  background: rgba(42, 43, 56, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  transform: translateZ(50px); 
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.exp-type {
+  background: #00bcd4;
+  color: #121212;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.exp-role {
+  font-size: 1.8rem;
+  margin: 20px 0 5px;
+  color: #fff;
+}
+
+.exp-company {
+  color: #00bcd4;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.exp-duration {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.exp-desc {
+  line-height: 1.6;
+  color: #b0b0b0;
+}

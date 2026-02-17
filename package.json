@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.49",
+    "react-parallax-tilt": "^1.7.319"
+  }
+}
